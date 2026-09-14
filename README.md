@@ -51,7 +51,7 @@
       — Used Excel PivotTables to calculate totals, counts, and sums for sales, quantity, and items in cart. This provided an initial view of how sales and order activity were distributed across the different categories.
 
  - Time-based analysis 
-      — Reviewed the order dates and years covered by the dataset (2023–2025) to understand the period being analyzed and check for any gaps or unusual changes over time.
+       — Reviewed the order dates and years covered by the dataset (2023–2025) to understand the period being analyzed and check for any gaps or unusual changes over time.
 
  - Outlier and anomaly check 
       — Reviewed price, quantity, and items in cart for unusually high or low values that could indicate data entry errors or unusual orders.
