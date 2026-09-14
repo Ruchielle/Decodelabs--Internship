@@ -39,13 +39,13 @@
 ### Exploratory Data Analysis 
 
  - Data structure review 
-      — Reviewed the 15 columns in the dataset, including order ID, order date, customer ID, product, quantity, price, shipping address, payment method, order status, tracking number, items in cart, coupon code, referral source, and total price. This helped clarify what each column represented.
+      - Reviewed the 15 columns in the dataset, including order ID, order date, customer ID, product, quantity, price, shipping address, payment method, order status, tracking number, items in cart, coupon code, referral source, and total price. This helped clarify what each column represented.
 
  - Data cleaning 
-      — Checked the dataset for missing values, duplicate records, inconsistent entries, and incorrect data types before beginning the analysis.
+      - Checked the dataset for missing values, duplicate records, inconsistent entries, and incorrect data types before beginning the analysis.
 
  - Category breakdown 
-      — Reviewed the different values within key fields, including order status (cancelled, delivered, pending, returned, and shipped), payment method (cash, credit card, debit card, gift card, and online), and referral source (Facebook, Google, and Instagram).
+      - Reviewed the different values within key fields, including order status (cancelled, delivered, pending, returned, and shipped), payment method (cash, credit card, debit card, gift card, and online), and referral source (Facebook, Google, and Instagram).
 
  - Initial summary analysis 
       - Used Excel PivotTables to calculate totals, counts, and sums for sales, quantity, and items in cart. This provided an initial view of how sales and order activity were distributed across the different categories.
@@ -54,7 +54,53 @@
       - Reviewed the order dates and years covered by the dataset (2023–2025) to understand the period being analyzed and check for any gaps or unusual changes over time.
 
  - Outlier and anomaly check 
-      — Reviewed price, quantity, and items in cart for unusually high or low values that could indicate data entry errors or unusual orders.
+      - Reviewed price, quantity, and items in cart for unusually high or low values that could indicate data entry errors or unusual orders.
 
  - Order status integrity check 
-      — Checked whether the same order ID appeared with more than one status, such as both “Returned” and “Delivered.” The check confirmed that each order ID had only one status. This means the status represents the recorded outcome for each order rather than a history of status changes, which was important when interpreting the returned, cancelled, pending, and delivered orders.
+      - Checked whether the same order ID appeared with more than one status, such as both “Returned” and “Delivered.” The check confirmed that each order ID had only one status. This means the status represents the recorded outcome for each order rather than a history of status changes, which was important when interpreting the returned, cancelled, pending, and delivered orders.
+
+
+### Key Insights 
+
+ - Sales by Coupon Code
+      - Free Ship generated the highest sales value, followed by No Coupon, which represents records where the coupon code was blank and was relabeled as “No Coupon” during cleaning.
+
+ - Cancelled Orders by Coupon Code
+      - Free Ship and Winter15 had the highest number of cancelled orders, with 67 cancellations each.
+
+ - Cancellation Rate by Coupon Code
+      - Winter15 recorded the highest cancellation rate at 22.95%, followed by Free Ship at 21.41%.
+
+ - Cancelled Orders by Referral Source
+      - Email recorded the highest number of cancelled orders at 59, followed closely by Google with 58.
+
+ - Cancellation Rate by Referral Source
+      - Google had the highest cancellation rate at 24.07%, followed by Email at 23.60%.
+
+ - Monthly Sales Trend
+      - The number of cancelled orders varied between 4 and 14 across the months.
+
+ - Overall KPIs
+      - The dataset contains 1,200 orders, with total sales of 1,264,761.96, total quantity sold of 3,535, and 6,582 total items in cart.
+
+ - Yearly Sales and Growth
+      - Sales declined across all three years. Sales fell by 13.10% in 2024 compared with 2023, while 2025 recorded a further 51.71% year-on-year decline. Overall sales in 2025 were 58.74% lower than the 2023 base year.
+
+ - Sales by Order Status
+      - Cancelled orders recorded the highest sales value, followed by Pending orders.
+
+ - Order Status by Year
+      - In 2023, Pending orders were highest at 117, followed by Cancelled at 107 and Returned at 102. In 2024, Shipped orders were highest at 100, while Returned and Delivered orders tied at 97 each. In 2025, Cancelled orders were highest at 60, followed by Returned orders at 48.
+
+ - Sales by Payment Method
+      - Online had the highest number of orders at 258, followed by Credit Card with 234. However, Credit Card generated the highest sales value, followed by Online.
+
+ - Sales by Product
+      - Chair generated the highest sales value, closely followed by Printer.
+
+ - Sales by Referral Source
+      - Instagram generated the highest sales value, followed by Email.
+
+ - Returned vs. Shipped Orders
+      - No returned orders were also recorded as shipped, confirming that each order had a single final status.
+
