@@ -1,5 +1,18 @@
 ## Decodelabs Internship Project 
 
+## Table of Content 
+ - [Projects Overview](#project-overview)
+ - [Project Objective](#project-objective)
+ - [Tools](#tools) 
+ - [Data Workflow](#data-workflow) 
+ - [Key Metrics](#key-metrics)
+ - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+ - [Exploratory Data Analysis](#eploratory-data-analysis)
+ - [Key Insights and Visuals](#key-insights-and-visuals)
+ - [Recommendations](#recommendation)
+ - [Assumptions](#assumptions)
+ - [Limitations](#limitations)
+ - [Author](#author)
 
 ![image atl](c571db4e-bc54-4b9b-b2d4-d2035de04ef6.jpeg)
 ### Project Overview 
