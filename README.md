@@ -119,3 +119,56 @@
  - Returned vs. Shipped Orders
       - No returned orders were also recorded as shipped, confirming that each order had a single final status.
 
+
+### Recommendations
+
+ - Investigate pending orders
+      - Review the high number of pending orders to understand whether they are caused by fulfillment delays, payment issues, or customers abandoning their orders. Resolving these issues could help recover potential sales.
+
+ - Review cancellation patterns
+      - Investigate the high cancellation rates associated with Winter15 and Free Ship, as well as the higher cancellation rates from Google and Email referrals. This can help determine whether the issue is related to promotions, customer expectations, or order fulfillment.
+ 
+ - Review marketing and payment patterns
+      - Instagram and Email generated some of the highest sales values, while Online and Credit Card showed different patterns in order volume and sales. The business should review these patterns when evaluating marketing and payment strategies.
+
+ - Investigate the decline in sales
+      - Sales declined by 51.71% YoY in 2025 and 58.74% overall compared with 2023. The business should investigate possible factors such as changes in customer demand, competition, product issues, or reduced marketing reach.
+
+ - Improve data capture
+      - Record changes in order status over time rather than storing only the final status. This would make it easier to track the complete order journey and conduct deeper analysis in the future.
+
+
+### Limitations
+
+ - Only the final order status is recorded
+      - The dataset contains one status for each order, so it cannot show the complete journey of an order or confirm whether an order was delivered and later returned.
+ 
+ - Cancellation reasons are not provided
+      - The dataset identifies cancelled orders but does not explain why customers cancelled them, limiting the ability to determine the exact causes of cancellations.
+ 
+ - Missing coupon information
+      - Some records did not have a coupon code and were labelled “No Coupon” during cleaning. This means the analysis assumes those records represent orders where no coupon was used.
+ 
+ - Limited time period
+      - The dataset covers only 2023–2025, so the analysis may not be sufficient to determine whether the decline in sales is a long-term trend or influenced by shorter-term factors.
+ 
+ - No external business information
+      - The analysis is based only on the available order data and does not include external factors such as competitor activity, market conditions, or broader economic changes.
+
+
+### Assumptions
+
+ - Order status
+      - It was assumed that the recorded order_status represents the final status of each order in the dataset.
+ 
+ - No Coupon
+      - It was assumed that records labelled “No Coupon” represent orders where no coupon was used, rather than missing data.
+ 
+ - Referral Source
+      - It was assumed that the recorded referral source accurately represents where each order originated.
+ 
+ - Currency
+      - It was assumed that all monetary values were recorded in the same currency and can therefore be compared across the dataset.
+ 
+ - Duplicate Records
+      - It was assumed that the cleaned dataset contained no duplicate records based on the duplicate check performed during the Excel cleaning process.
